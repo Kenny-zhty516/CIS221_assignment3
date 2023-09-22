@@ -1,0 +1,156 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* 1. Resets the default margin on body */
+    margin: 0;
+    /* margin: 0 25rem; */
+    /* padding: 0 25rem; */
+}
+
+figure {
+    margin: 0;
+}
+
+.container {
+    padding: 0 1rem;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.header {
+    /* background-color: transparent; */
+    background-color: #F2FAFF;
+    /* 2. Please find out the color from Figma */
+}
+
+.site-logo {
+    text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    color: rgb(202, 48, 48);
+    background-color: #3987B8;
+    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+    /* margin-top: 3rem; */
+}
+
+.footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    align-items: center;
+    background-color: #3987B8;
+    color: white;
+}
+
+.footer-content a {
+    color: white;
+}
+
+.learning-objectives {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 700;
+
+}
+
+.learning-objectives .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculum {
+    border-spacing: 0;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.curriculum thead td {
+    border-top: solid 2px #999999;
+    border-bottom: solid 1px #999999;
+    /* border-bottom: solid 1px #999999; */
+}
+
+.curriculum td {
+    padding-left: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.curriculum tbody td {
+    border-top: solid 1px #999999;
+    /* border-bottom: solid 1px #999999; */
+    /* border-bottom: solid 2px #999999; */
+}
+
+.curriculum tbody tr:last-child td {
+    border-bottom: solid 2px #999999;
+    /* border-bottom: solid 2px #999999; */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 64rem;
+    }
+
+    .site-logo {
+        /* text-align: center; */
+        text-align: left;
+        /* 3. The logo aligns to the left on large screen */
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .learning-objectives {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+/* 
+    4. Please create a utility CSS definition for margin-top: 32px;
+    4.1 Instead of using pixel unit please use the "rem" unit.
+    4.2 Use this CSS class to add virtical spacing above the <h1>.
+ */
+.util {
+    font-size: 32px;
+    /* 16px = 1rem */
+    margin-top: 2rem;
+    font-family: 'Roboto Serif', serif;
+}
+
+.font-serif {
+    font-family: 'Roboto Serif', serif;
+    ;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 3.2rem;
+    font-family: 'Roboto Serif', serif;
+}
